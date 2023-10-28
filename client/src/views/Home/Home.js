@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <>
-      <h1 className='product-text '>All products</h1>
+      <h1 className='product-text '>Beauty products</h1>
       <div className='containers'>
 
 
@@ -38,12 +38,12 @@ function Home() {
               <div className='containers'>
                 <div key={index} className='product-card '>
                   <img src={productImage} className='product-img' alt='product' />
-                  <h1>{name}</h1>
-                  <p>{description}</p>
-                  <h2>{price}</h2>
+                  <h1 className='product-text'>{name}</h1>
+                  <p className='product-desc'>{description}</p>
+                  <h2 className='product-price'>{price}</h2>
 
-                  <h2>{brand}</h2>
-                  <a href={`/productdetails/${_id}`}  target='_blank'  >View Details</a>
+                  <h2 className='product-price'>{brand}</h2>
+                  <a href={`/productdetails/${_id}`}  target='_blank' className='view-btn' >View Details</a>
 
                   <button className='delete-btn'
                     onClick={() => { deletepro(_id) }}>

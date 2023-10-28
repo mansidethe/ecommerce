@@ -42,7 +42,7 @@ useEffect(()=>{
       productImage
     }
 
-    const response = await axios.post('/product', product);
+    const response = await axios.put(`/product/${_id}`, product);
 
     alert(response.data.message)
 
@@ -51,7 +51,10 @@ useEffect(()=>{
     setPrice('')
     setBrand('')
     setProductImage('')
-  
+    // const updateproduct = {name, description, price, brand, productImage }
+    // const response = await axios.put(`/product/${_id} `);
+    // alert (response.data.message)
+
   }
 
   return (

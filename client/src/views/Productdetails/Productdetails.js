@@ -19,13 +19,15 @@ function Productdetails() {
      const{name, productImage, price, description, brand} = product
   return (
     <div>
-        <h1>Product Detail</h1>
-        <h2>Product ID:{_id}</h2>
-        <p>{productImage}</p>
-        <h1>Name:{name}</h1>
-        <h1>Description:{description}</h1>
-        <h1>Brand:{brand}</h1>
-        <h1>price:{price}</h1>
+        <h1 className='prod-text'>Product Detail</h1>
+        <div className='pro-card'>
+        <p className='prod-texts'><b>Product ID:</b>{_id}</p>
+        <img src={productImage} className='pro-img'/>
+        <p className='pro-text'><b>Name : </b>{name}</p>
+        <p className='pro-text'><b>Description : </b>{description}</p>
+        <p className='pro-text'><b>Brand : </b>{brand}</p>
+        <p className='pro-text'><b>price : </b>{price}</p>
+        </div>
     </div>
   )
 }

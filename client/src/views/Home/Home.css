@@ -3,28 +3,54 @@
     font-size: 50px;
 }
 .product-card{
-    border: 1px solid black;
-    height: 700px;
-    width: 500px;
-    margin:20px ;
    
-}
+    box-shadow: 1px 2px 20px 5px gray;
+    height: 730px;
+    width: 550px;
+    margin:20px ;
+   }
+   .product-text{
+    text-align: center;
+   padding: 0 10px;
+   margin-top: 30px;
+   }
+   .product-desc{
+    text-align: justify;
+    margin-left:30px;
+    margin-right: 30px;
+    font-size: 22px;
+   }
+   .product-price{
+    text-align: justify;
+    margin-left:30px;
+    margin-right: 30px;
+   }
 .product-img{
-    height: 400px;
-    width: 490px;
-    margin: 5px;
+    height: 350px;
+    width: 510px;
+    margin: 10px 0 10px 18px;
+
 }
 .delete-btn{
    position: absolute; 
-   margin-left: 280px;
+   margin-left: 220px;
+   padding: 0 20px;
+   height: 30px;
+   font-size: 20px;
 }
 .containers{
     display: flex;
- 
-    flex-direction: row;
+ flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 .update-btn{
-    margin-left: 360px;
+    margin-left: 350px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.view-btn{
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
 }
