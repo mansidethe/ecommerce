@@ -1,0 +1,30 @@
+.product-text{
+    text-align: center;
+    font-size: 50px;
+}
+.product-card{
+    border: 1px solid black;
+    height: 700px;
+    width: 500px;
+    margin:20px ;
+   
+}
+.product-img{
+    height: 400px;
+    width: 490px;
+    margin: 5px;
+}
+.delete-btn{
+   position: absolute; 
+   margin-left: 280px;
+}
+.containers{
+    display: flex;
+ 
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.update-btn{
+    margin-left: 360px;
+}
